@@ -1,47 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-22T13:03:39 EDT" name="ORANGE" finished-at="2023-10-22T13:04:41 EDT" duration-ms="61891">
+  <suite started-at="2023-10-28T10:30:59 EDT" name="Default suite" finished-at="2023-10-28T10:33:34 EDT" duration-ms="154932">
     <groups>
     </groups>
-    <test started-at="2023-10-22T13:03:39 EDT" name="Test" finished-at="2023-10-22T13:04:41 EDT" duration-ms="61891">
-      <class name="com.it.bd.tests.DashboardTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.it.bd.tests.DashboardTest@27f981c6]" started-at="2023-10-22T13:04:29 EDT" name="start" finished-at="2023-10-22T13:04:29 EDT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method signature="adminTest()[pri:0, instance:com.it.bd.tests.DashboardTest@27f981c6]" started-at="2023-10-22T13:04:29 EDT" name="adminTest" finished-at="2023-10-22T13:04:41 EDT" duration-ms="11286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminTest -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.it.bd.tests.DashboardTest@27f981c6]" started-at="2023-10-22T13:04:41 EDT" name="report" finished-at="2023-10-22T13:04:41 EDT" duration-ms="229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.it.bd.tests.DashboardTest -->
+    <test started-at="2023-10-28T10:30:59 EDT" name="Default test" finished-at="2023-10-28T10:33:34 EDT" duration-ms="154932">
       <class name="com.it.bd.tests.LoginTest">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.it.bd.tests.LoginTest@51e69659]" started-at="2023-10-22T13:03:37 EDT" name="startBrowser" finished-at="2023-10-22T13:03:39 EDT" duration-ms="2125" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:com.it.bd.tests.LoginTest@2d710f1a]" started-at="2023-10-28T10:30:56 EDT" name="startBrowser" finished-at="2023-10-28T10:30:59 EDT" duration-ms="2736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="start()[pri:0, instance:com.it.bd.tests.LoginTest@51e69659]" started-at="2023-10-22T13:03:39 EDT" name="start" finished-at="2023-10-22T13:04:17 EDT" duration-ms="38572" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.it.bd.tests.LoginTest@2d710f1a]" started-at="2023-10-28T10:30:59 EDT" name="start" finished-at="2023-10-28T10:33:32 EDT" duration-ms="153269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="loginTest()[pri:0, instance:com.it.bd.tests.LoginTest@51e69659]" started-at="2023-10-22T13:04:18 EDT" name="loginTest" finished-at="2023-10-22T13:04:28 EDT" duration-ms="10955" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.it.bd.tests.LoginTest@2d710f1a]" started-at="2023-10-28T10:33:32 EDT" name="loginTest" finished-at="2023-10-28T10:33:33 EDT" duration-ms="1190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.it.bd.tests.LoginTest@51e69659]" started-at="2023-10-22T13:04:28 EDT" name="report" finished-at="2023-10-22T13:04:29 EDT" duration-ms="792" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.it.bd.tests.LoginTest@2d710f1a]" started-at="2023-10-28T10:33:33 EDT" name="report" finished-at="2023-10-28T10:33:34 EDT" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.it.bd.tests.LoginTest@51e69659]" started-at="2023-10-22T13:04:41 EDT" name="close" finished-at="2023-10-22T13:04:41 EDT" duration-ms="499" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.it.bd.tests.LoginTest@2d710f1a]" started-at="2023-10-28T10:33:34 EDT" name="close" finished-at="2023-10-28T10:33:34 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.it.bd.tests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- ORANGE -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

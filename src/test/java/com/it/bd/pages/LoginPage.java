@@ -1,20 +1,20 @@
 package com.it.bd.pages;
 
 import java.io.IOException;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.it.bd.basedrivers.PageDriver;
+import com.it.bd.utilities.ExcelUtils;
 import com.it.bd.utilities.GetScreenShot;
 
 public class LoginPage {
 	ExtentTest test;
+	
+	ExcelUtils excelData = new ExcelUtils();
 
 	public LoginPage(ExtentTest test) {
 		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
@@ -32,6 +32,7 @@ public class LoginPage {
 	@FindBy(xpath = "//button[@type=\"submit\"]")
 	WebElement loginButton;
 	
+	@SuppressWarnings("unused")
 	public void failCase(String message, String scName) throws IOException {
 		test.fail(
 				"<p style=\"color:#FF5353; font-size:13px\"><b>"+message+"</b></p>");
@@ -47,6 +48,7 @@ public class LoginPage {
 		test.pass("<p style=\"color:#85BC63; font-size:13px\"><b>"+message+"</b></p>");
 	}
 	
+	@SuppressWarnings("unused")
 	public void passCaseWithSC(String message, String scName) throws IOException {
 		test.pass("<p style=\"color:#85BC63; font-size:13px\"><b>"+message+"</b></p>");
 		String screenShotPath = GetScreenShot.capture(PageDriver.getCurrentDriver(), ""+scName+"");
@@ -54,18 +56,19 @@ public class LoginPage {
 		test.pass(MediaEntityBuilder.createScreenCaptureFromPath(dest).build());
 	}
 
+	@SuppressWarnings("static-access")
 	public void login() throws InterruptedException, IOException {
-
+		excelData.ReadExcel();
 		try {
 			test.info("Please enter username");
 			if (username.isDisplayed()) {
-				username.sendKeys("Admin");
+				username.sendKeys(excelData.username);
 				passCase("Username entered");
 
 				try {
 					test.info("Enter password");
 					if (password.isDisplayed()) {
-						password.sendKeys("admin123");
+						password.sendKeys(excelData.password);
 						passCase("Password send");
 
 						try {
